@@ -42,10 +42,10 @@ body{
 }
 
 .wrapper{
-    background: #F5EBDC;
+    background: #efd7b1;
     border: 2px solid rgba(0, 0, 0, 0.4);
     border-radius: 1rem;
-    box-shadow: 2rem 1.5rem 2rem 5px rgba(0, 0, 0, 0.5);
+    box-shadow: 1rem 1rem 15px 10px rgba(0, 0, 0, 0.5);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -58,14 +58,14 @@ body{
     justify-content: center;
     align-items: center;
     font-family: 'Flame1';
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     margin-left: 3rem;
+    margin-right: 3rem;
 }
 
 #text p{
     color: rgb(62, 61, 61);
     /* background-color: yellow; */
-    margin-right: 3rem;
 }
 
 
@@ -74,10 +74,9 @@ body{
     /* background-color: yellow; */
     justify-content: flex-end;
     margin-right: 3rem;
-    margin-bottom: 3rem;
     letter-spacing: .1rem;
     font-family: 'Flame2';
-    font-size: 4rem;    
+    font-size: 3rem;    
 }
 
 #author p{
@@ -91,7 +90,7 @@ body{
 .buttons{
     display: flex;
     justify-content: space-between;
-    height: 7rem;
+    height: 5rem;
     margin-left: 3rem;
     color: #F3ECDA;
     align-items: center;
@@ -104,7 +103,7 @@ body{
 
 .wrapper-icons{
     display: flex;
-    width: 100%;
+    width: 50%;
     height: 100%;
     justify-content: start;
     gap: 2rem;
@@ -116,7 +115,7 @@ body{
     color: #F3ECDA;
     border-radius: 5px;
     border: 2px solid rgba(0, 0, 0, 0.1);
-    font-size: 5rem;
+    font-size: 3rem;
     width: 35%;
     display: flex;
     align-items: center;
@@ -129,16 +128,17 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    width: 50%;
     height: 100%;
     margin-right: 3rem;
     font-family: 'Flame2';
     text-transform: uppercase;
-    font-size: 5rem;
+    font-size: 3rem;
     letter-spacing: .2rem;
     word-spacing: .5rem;
     border: 2px solid rgba(0, 0, 0, 0.1);
     border-radius: .4rem;
+    user-select: none;
 }
 
 .footer{
@@ -146,6 +146,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    user-select: none;
 }
 
 .santi{
