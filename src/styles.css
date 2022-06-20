@@ -1,4 +1,21 @@
+@font-face {
+    font-family: 'Flame1';
+    src: url('./fonts/FlameBold.otf') format('woff2');
+}
+@font-face {
+    font-family: 'Flame2';
+    src: url('./fonts/FlameCondensed.otf') format('woff2');
+}
+@font-face {
+    font-family: 'Flame3';
+    src: url('./fonts/FlameRegular.otf') format('woff2');
+}
+@font-face {
+    font-family: 'Flame4';
+    src: url('./fonts/FlameSans.otf') format('woff2');
+}
 body{
+    
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -9,55 +26,169 @@ body{
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: #ccc;
-    color: black;
+    width: 100vw;
+    background: #522214;
+}
+
+
+
+.p-2{
+    /* background-color: aquamarine; */
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
 }
 
 .wrapper{
-    background: #fff;
-    height: 40vh;
-    width: 40%;
-    border: 1px solid rgba(0, 0, 0, 0.3);
-    box-shadow: 2rem 1.5rem 2rem 5px;
+    background: #F5EBDC;
+    border: 2px solid rgba(0, 0, 0, 0.4);
     border-radius: 1rem;
+    box-shadow: 2rem 1.5rem 2rem 5px rgba(0, 0, 0, 0.5);
     display: flex;
     flex-direction: column;
-    justify-content: normal;
+    justify-content: center;
+    padding-bottom: 3rem;
+    
 }
 
 #text{
-    background-color: yellowgreen;
-    align-self: center;
-    margin-top: 2rem;
-    font-size: 3rem;
-    margin-bottom: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Flame1';
+    font-size: 4rem;
+    margin-left: 3rem;
 }
+
+#text p{
+    color: rgb(62, 61, 61);
+    /* background-color: yellow; */
+    margin-right: 3rem;
+}
+
 
 #author{
     display: flex;
-    justify-content: right;
-    margin-right: 2rem;
-    font-size: 1.7rem;
+    /* background-color: yellow; */
+    justify-content: flex-end;
+    margin-right: 3rem;
+    margin-bottom: 3rem;
+    letter-spacing: .1rem;
+    font-family: 'Flame2';
+    font-size: 3.5rem;    
+}
+
+#author p{
+    color: rgb(62, 61, 61);
+}
+
+.cursor-pointer:hover{
+    cursor: pointer;
 }
 
 .buttons{
     display: flex;
     justify-content: space-between;
-    padding: 0 5rem 0 5rem;
+    height: 7rem;
+    margin-left: 3rem;
+    color: #F3ECDA;
     align-items: center;
+    user-select: none;
 }
 
 .flex{
-    display: flex;
-    gap: 2rem;
-    font-size: 3rem;
+    display: flex;    
 }
 
-.icons{
+.wrapper-icons{
     display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: start;
     gap: 2rem;
-    font-size: 2rem;
-    height: 40px;
-    width: 40px;
-    background: yellowgreen;
+
+}
+
+.icon{
+    background: #FF8635;
+    color: #F3ECDA;
+    border-radius: 5px;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    height: 100%;
+    font-size: 5rem;
+    width: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#new-quote{
+    background:#1A8738;
+    color: #F3ECDA;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    margin-right: 3rem;
+    font-family: 'Flame2';
+    text-transform: uppercase;
+    font-size: 4rem;
+    letter-spacing: .2rem;
+    word-spacing: .5rem;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    
+    border-radius: .4rem;
+}
+
+.santi{
+    color: #F5EBDC;
+    font-family:'Poppins';
+    font-size: 2.5rem;
+    letter-spacing: .1rem;
+    word-spacing: .3rem;
+    font-family: "Flame4";
+}
+
+@media screen and (max-width: 700px){
+
+    .wrapper{
+        width: 90vw;
+        height: 70vh;
+    }
+
+    .buttons{
+        padding: 0 10px 0 10px;        
+    }
+
+    #author{
+        font-size: 1.4rem;
+    }
+
+    #text{
+        font-size: 2rem;
+        
+    }
+    .santi{
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 1200px){
+
+    .wrapper{
+        width: 70vw;
+        height: 70vh;
+    }
+
+    .buttons{
+        padding: 0 10px 0 10px;        
+    }
+
+
+    #text{
+        font-size: 3rem;
+    }
 }
