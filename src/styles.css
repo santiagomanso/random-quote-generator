@@ -23,8 +23,8 @@ body{
 #quote-box{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     height: 100vh;
     width: 100vw;
     background: #522214;
@@ -58,7 +58,7 @@ body{
     justify-content: center;
     align-items: center;
     font-family: 'Flame1';
-    font-size: 4rem;
+    font-size: 3.5rem;
     margin-left: 3rem;
 }
 
@@ -77,7 +77,7 @@ body{
     margin-bottom: 3rem;
     letter-spacing: .1rem;
     font-family: 'Flame2';
-    font-size: 3.5rem;    
+    font-size: 4rem;    
 }
 
 #author p{
@@ -116,7 +116,6 @@ body{
     color: #F3ECDA;
     border-radius: 5px;
     border: 2px solid rgba(0, 0, 0, 0.1);
-    height: 100%;
     font-size: 5rem;
     width: 35%;
     display: flex;
@@ -135,60 +134,171 @@ body{
     margin-right: 3rem;
     font-family: 'Flame2';
     text-transform: uppercase;
-    font-size: 4rem;
+    font-size: 5rem;
     letter-spacing: .2rem;
     word-spacing: .5rem;
     border: 2px solid rgba(0, 0, 0, 0.1);
-    
     border-radius: .4rem;
+}
+
+.footer{
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .santi{
     color: #F5EBDC;
     font-family:'Poppins';
-    font-size: 2.5rem;
+    font-size: 2rem;
     letter-spacing: .1rem;
     word-spacing: .3rem;
     font-family: "Flame4";
 }
 
-@media screen and (max-width: 700px){
+.emoji-footer{
+    height: 4rem;
+    width: 4rem;
+    padding-bottom: 1.3rem;
+    transform: rotate(15deg);
+}
+
+
+/*------------ TABLETS ------------*/
+@media screen and (max-width: 1100px){
+
+    .p-2{
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
 
     .wrapper{
-        width: 90vw;
+        width: 70vw;
         height: 70vh;
+        margin: 0;
+        padding: 0;
+        
     }
 
     .buttons{
-        padding: 0 10px 0 10px;        
+        display: flex;
+        justify-content: space-between;
+        height: 4rem;
+        margin-left: 1rem;
+        color: #F3ECDA;
+        align-items: center;
+        user-select: none;        
+    }
+
+    #text{
+        margin: 0 1rem 0 1rem;
+    }
+
+    #text p{
+        color: rgb(62, 61, 61);
+        margin: 0;
+        font-size: 2rem;
     }
 
     #author{
         font-size: 1.4rem;
+        margin: 0 1rem 2rem 0;
     }
 
-    #text{
-        font-size: 2rem;
-        
+    .buttons{
+        margin: 0;
+        height: 5rem;
+        margin: 0 0 0 1rem;
     }
+
+    .icon{
+        font-size: 3rem;
+        width: 35%;
+    }
+
+    .wrapper-icons{
+        gap: 1rem;
+    }
+
+    #new-quote{
+        font-size: 2rem;
+    }
+
     .santi{
         font-size: 1rem;
     }
 }
 
-@media screen and (max-width: 1200px){
+/*------------ CELL PHONES portrait ------------*/
+@media screen and (max-width: 700px){
+
+    .p-2{
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
 
     .wrapper{
-        width: 70vw;
-        height: 70vh;
+        width: 100vw;
+        height: 50vh;
+        margin: 0;
+        padding: 0;
+        
     }
 
     .buttons{
-        padding: 0 10px 0 10px;        
+        display: flex;
+        justify-content: space-between;
+        height: 4rem;
+        margin-left: 1rem;
+        color: #F3ECDA;
+        align-items: center;
+        user-select: none;        
     }
-
 
     #text{
-        font-size: 3rem;
+        margin: 0 1rem 0 1rem;
     }
+
+    #text p{
+        color: rgb(62, 61, 61);
+        margin: 0;
+        font-size: 2rem;
+    }
+
+    #author{
+        font-size: 1.4rem;
+        margin: 0 1rem 2rem 0;
+    }
+
+    .buttons{
+        margin: 0;
+        height: 5rem;
+        margin: 0 0 0 1rem;
+    }
+
+    .icon{
+        font-size: 3rem;
+        width: 35%;
+    }
+
+    .wrapper-icons{
+        gap: 1rem;
+    }
+
+    #new-quote{
+        font-size: 2rem;
+    }
+
+    .santi{
+        font-size: 1rem;
+    }
+
+
 }
