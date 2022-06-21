@@ -1,6 +1,6 @@
 # Random Quote Machine
 
-Live Demo of my [Random Quote Machine](https://lambent-mandazi-599f73.netlify.app/).
+Live Demo of my <a href="https://lambent-mandazi-599f73.netlify.app/" target="_blank">Random Quote Machine</a>
 
 <img src="https://raw.githubusercontent.com/santiagomanso/random-quote-generator/main/src/assets/preview.png" alt="preview" />
 
