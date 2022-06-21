@@ -32,7 +32,7 @@ function App() {
         </div>
 
         <div className='footer'>
-          <p className='santi'>By Santiago Manso Castro</p>
+          <p className='santi'>by Santiago Manso Castro</p>
           <svg
             id='emoji'
             viewBox='0 0 72 72'
