@@ -56,8 +56,10 @@ a, a:visited{
     box-shadow: 1rem 1rem 15px 10px rgba(0, 0, 0, 0.5);
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     padding-bottom: 3rem;
+    width: 65vw;
+    height: 50vh;
     
 }
 
@@ -73,6 +75,8 @@ a, a:visited{
 
 #text p{
     color: rgb(62, 61, 61);
+    width: 100%;
+
     /* background-color: yellow; */
 }
 
@@ -83,6 +87,7 @@ a, a:visited{
     justify-content: flex-end;
     margin-right: 3rem;
     letter-spacing: .1rem;
+    word-spacing: .6rem;
     font-family: 'Flame2';
     font-size: 3rem;    
 }
