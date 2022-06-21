@@ -1,0 +1,31 @@
+export const quotes = [
+  'That which does not kill us makes us stronger.',
+  'Life is what happens when you’re busy making other plans.',
+  'You must be the change you wish to see in the world.',
+  'Get busy living or get busy dying',
+  'Whether you think you can or you think you can’t, you’re right.',
+  'If you’re going through hell, keep going.',
+  'Strive not to be a success, but rather to be of value.',
+  'Twenty years from now you will be more disappointed by the things that you didn’t do than by the ones you did do.',
+  'Great minds discuss ideas; average minds discuss events; small minds discuss people.',
+  'Those who dare to fail miserably can achieve greatly.',
+  'He that falls in love with himself will have no rivals.',
+  'Life is ten percent what happens to you and ninety percent how you respond to it.',
+  'Don’t be afraid to give up the good to go for the great.',
+]
+
+export const authors = [
+  'Friedrich Nietzsche',
+  'John Lennon',
+  'Mahatma Gandhi',
+  'Stephen King',
+  'Henry Ford',
+  'Winston Churchill',
+  'Albert Einstein',
+  'Mark Twain',
+  'Eleanor Roosevelt',
+  'John F. Kennedy',
+  'Benjamin Franklin',
+  'Charles Swindoll',
+  'John D. Rockefeller',
+]

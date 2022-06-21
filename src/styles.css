@@ -14,20 +14,28 @@
     font-family: 'Flame4';
     src: url('./fonts/FlameSans.otf') format('woff2');
 }
+
 body{
-    
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #522214;
 }
+
+a, a:visited{
+    text-decoration: none;
+    color: inherit;
+}
+
 #quote-box{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
-    width: 100vw;
-    background: #522214;
 }
 
 

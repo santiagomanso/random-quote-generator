@@ -1,31 +1,58 @@
+import { useState } from 'react'
+import { quotes, authors } from './data/dataArrays'
 import './styles.css'
 
 function App() {
+  const handlerClick = () => {
+    let index = randomIndex(quotes.length)
+    setAuthor(authors[index])
+    setQuote(quotes[index])
+  }
+
+  const randomIndex = (arrayLength) => {
+    return Math.floor(Math.random() * arrayLength)
+  }
+
+  const [quote, setQuote] = useState(
+    quotes[Math.floor(Math.random() * quotes.length)]
+  )
+  const [author, setAuthor] = useState(
+    authors[Math.floor(Math.random() * authors.length)]
+  )
+
   return (
     <div id='quote-box'>
       <div className='p-2'>
         <div className='wrapper'>
           <div id='text' className='text-div'>
-            <p>
-              "If you’re offered a seat on a rocket ship, don’t ask what seat!
-              Just get on."
-            </p>
+            <p>{quote}</p>
           </div>
           <div id='author'>
             <div></div>
-            <p>- napoleon</p>
+            <p>- {author}</p>
           </div>
           <div className='buttons'>
             <div className='wrapper-icons'>
               <div className='icon cursor-pointer'>
-                <i className='fa-brands fa-twitter'></i>
+                <a
+                  href='http://twitter.com/intent/tweet'
+                  target='_blank'
+                  rel='norrefer noreferrer'
+                  id='tweet-quote'
+                >
+                  <i className='fa-brands fa-twitter'></i>
+                </a>
               </div>
               <div className='icon cursor-pointer'>
                 <i className='fa-brands fa-tumblr'></i>
               </div>
             </div>
 
-            <button id='new-quote' className='cursor-pointer'>
+            <button
+              id='new-quote'
+              className='cursor-pointer'
+              onClick={handlerClick}
+            >
               new quote
             </button>
           </div>
